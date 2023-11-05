@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+max-width: 400px;
+margin: 0 auto;
+}
+
+button {
+padding: 10px 20px;
+margin: 5px;
+}
+
+#score {
+font-weight: bold;
+font-size: 18px;
+}
+
+#winner {
+font-weight: bold;
+font-size: 24px;
+color: green;
+}

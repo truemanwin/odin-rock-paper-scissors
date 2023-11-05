@@ -12,11 +12,13 @@ buttons.forEach((button) => {
         const computerSelection = getComputerChoice();
         const roundResult = playRound(playerSelection, computerSelection);
 
-        updateScore(roundResult);
-        updateResultText(roundResult);
-        checkWinner();
-        if(playerScore > 5 || computerScore > 5)
+        if(playerScore === 5 || computerScore === 5)
             resetGame();
+        else {
+            updateScore(roundResult);
+            updateResultText(roundResult);
+            checkWinner();
+        }
     });
 });
 
